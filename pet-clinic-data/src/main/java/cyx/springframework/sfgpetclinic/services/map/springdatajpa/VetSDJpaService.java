@@ -1,7 +1,6 @@
 package cyx.springframework.sfgpetclinic.services.map.springdatajpa;
 
 import cyx.springframework.sfgpetclinic.model.Vet;
-import cyx.springframework.sfgpetclinic.repositories.SpecialtyRepository;
 import cyx.springframework.sfgpetclinic.repositories.VetRepository;
 import cyx.springframework.sfgpetclinic.services.VetService;
 import org.springframework.context.annotation.Profile;
@@ -15,11 +14,9 @@ import java.util.Set;
 public class VetSDJpaService implements VetService {
 
     private final VetRepository vetRepository;
-    private final SpecialtyRepository specialtyRepository;
 
-    public VetSDJpaService(VetRepository vetRepository, SpecialtyRepository specialtyRepository) {
+    public VetSDJpaService(VetRepository vetRepository) {
         this.vetRepository = vetRepository;
-        this.specialtyRepository = specialtyRepository;
     }
 
     @Override
