@@ -1,4 +1,4 @@
-package cyx.springframework.sfgpetclinic.services.map.springdatajpa;
+package cyx.springframework.sfgpetclinic.services.springdatajpa;
 
 import cyx.springframework.sfgpetclinic.model.PetType;
 import cyx.springframework.sfgpetclinic.repositories.PetTypeRepository;
