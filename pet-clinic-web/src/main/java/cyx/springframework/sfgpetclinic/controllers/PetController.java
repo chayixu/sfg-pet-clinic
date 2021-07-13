@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.Collection;
 
-@RequestMapping("/owners/{ownerId}")
 @Controller
+@RequestMapping("/owners/{ownerId}")
 public class PetController {
 
     private static final String VIEWS_PETS_CREATE_OR_UPDATE_FORM = "pets/createOrUpdatePetForm";
@@ -68,7 +68,6 @@ public class PetController {
             return VIEWS_PETS_CREATE_OR_UPDATE_FORM;
         } else {
             petService.save(pet);
-
             return "redirect:/owners/" + owner.getId();
         }
     }
