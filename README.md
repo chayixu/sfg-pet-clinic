@@ -1,3 +1,3 @@
-# sfg-pet-clinic
+PET CLINIC WEB APPLICATION
 
-SFT PET CLINIC
+First Spring Framework project learnt from online course.
